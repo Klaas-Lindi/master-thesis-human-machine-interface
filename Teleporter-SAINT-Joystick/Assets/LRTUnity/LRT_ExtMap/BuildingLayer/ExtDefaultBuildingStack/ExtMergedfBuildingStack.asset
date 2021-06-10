@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef7239c46ddb6ab469994291c9603c01, type: 3}
+  m_Name: ExtMergedfBuildingStack
+  m_EditorClassIdentifier: 
+  MeshModifiers:
+  - {fileID: 11400000, guid: 24f7f78cf64431c4e9f96aa86fa33e2f, type: 2}
+  - {fileID: 11400000, guid: 0478c021575b1674aac87d16e713b7c0, type: 2}
+  - {fileID: 11400000, guid: e98e3edc3e8655244910992cc7d8f0e1, type: 2}
+  - {fileID: 11400000, guid: 7114884f5ffac754cb6d4e38fcddc051, type: 2}
+  GoModifiers:
+  - {fileID: 11400000, guid: 75b9ed403c3433e42b61cd7c17a8395c, type: 2}

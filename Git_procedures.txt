@@ -1,0 +1,60 @@
+---------------
+Basic Commands:
+---------------
+
+neuen Branch erstellen:
+-git checkout -b <Branch_name or Branch_path>
+
+
+Clone
+- git clone https://github.com/UserName/[package_name].git [new_project_name]	# Uses [new_project_name] instead of [package_name]
+
+Credentials
+- git config --global credential.helper store
+- git pull
+
+Fetch
+- git fetch				# update local repository
+- git fetch --dry-run	# Show what would be done, without making any changes
+
+New Branch
+- git checkout -b <name>				# Neuen Branch erstellen (von aktuellem Branch)
+- git push --set-upstream origin <name>	                # Branch in Git erstellen
+
+New Project
+- git init
+- git remote add origin https://github.com/LucasBaierlein/[project_name]
+
+Pull
+- git pull
+- ./git-set-meta.cmd
+
+Push
+- ./git-get-meta.cmd
+- git add -A
+- git commit -m "[message]"
+- git push
+
+Retract
+- git rm --cached <filename>	# Undo git add
+
+Status
+- git status
+
+Merging
+- Be in master-branch
+- git merge *branch-name*
+
+
+---------------
+Error Handling:
+---------------
+
+(git pull)
+- Please, commit your changes or stash them before you can merge.
+-> Overwrite local changes
+	- git fetch --all
+	- git reset --hard origin/master
+-> Switch back to branch
+	- git checkout <branch_name>
+

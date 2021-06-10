@@ -1,0 +1,3 @@
+[submodule "Teleporter-SAINT-Joystick/Assets/LRTUnity"]
+	path = Teleporter-SAINT-Joystick/Assets/LRTUnity
+	url = https://gitlab.lrz.de/tor-teleoperation/LRTUnity.git

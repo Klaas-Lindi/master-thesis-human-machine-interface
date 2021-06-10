@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8950560660487370235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8950560660487370234}
+  - component: {fileID: 8950560660487370232}
+  - component: {fileID: 8950560660487370233}
+  m_Layer: 0
+  m_Name: PMOptimizer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8950560660487370234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8950560660487370235}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8950560661818177970}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8950560660487370232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8950560660487370235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9bd29ab539594985babc594c85b85aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableOptimizerMode: 0
+  writeLog: 0
+  logComment: 
+  pathToLog: log/03_Simulator_Flight_Automatism_Complete_unity_tmtc.log
+  skipEntries: 0
+  lineCounts: -1
+--- !u!114 &8950560660487370233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8950560660487370235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a248660f8e24ed591afd5018901385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableOptimizerMode: 1
+  writeLog: 1
+  logName: 
+  iterations: 10
+  populationSize: 10
+  weightError: 1
+  weightDerivativeError: 1
+  crossoverProb: 0.75
+  mutationProb: 0.1
+  randomSelectionPart: 0.45899999141693115
+  selectionMethod: 0
+  PUpperBound: 1
+  PLowerBound: 0
+  IUpperBound: 1
+  ILowerBound: 0
+  DUpperBound: 1
+  DLowerBound: 0
+  MaxVelHeightUB: 10
+  MaxVelHeightLB: 0
+  MaxVelPlaneUB: 10
+  MaxVelPlaneLB: 0
+  model: 0
+  pathToLog: log/03_Simulator_Flight_Automatism_Complete_unity_tmtc.log
+  skipEntries: 0
+  lineCounts: -1
+  XRegionIndices: 
+  YRegionIndices: 04000000
+  ZRegionIndices: 
+--- !u!1 &8950560661818177980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8950560661818177970}
+  - component: {fileID: 8950560661818177971}
+  m_Layer: 0
+  m_Name: DevelopmentTools
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8950560661818177970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8950560661818177980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.748208, y: 5.2753386, z: 29.036417}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8950560660487370234}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8950560661818177971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8950560661818177980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f2c4d5648c73d4daa4fb37c463a8e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pmHandler: {fileID: 0}
+  predictedUavState: {fileID: 0}
+  enableRealTimeAnalyse: 1
+  enableOverride: 0
+  logComment: Simulation Script Flight vom 2019.05.06
+  logPostfix: paper_latency_15s_1000ms_50ms
+  ERTPP: 0
+  ERTPP_Axes: {x: 0, y: 0, z: 0}
+  ERTPR: 0
+  ERTPR_Axes: {x: 0, y: 0, z: 0}
+  startScript: 1
+  pathToScript: ../pmanalysis/script_unity_v3_autosave.py
+  uavPosition: {x: 5, y: 5, z: 5}
+  uavMode: 1
+  uavCondition: 1
+  uavOperationState: 3
+  uavControlState: 0
+  automatism: 0
